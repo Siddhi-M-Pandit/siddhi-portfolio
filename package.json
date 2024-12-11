@@ -1,0 +1,14 @@
+{
+    "name": "siddhi-portfolio",
+    "version": "1.0.0",
+    "description": "Personal portfolio website",
+    "scripts": {
+      "predeploy": "npm run build",
+      "deploy": "gh-pages -d build"
+    },
+    "homepage": "https://Siddhi-M-Pandit.github.io/siddhi-portfolio/",
+    "dependencies": {
+      "gh-pages": "^5.0.0"
+    }
+  }
+  
