@@ -56,6 +56,15 @@
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6); /* Text shadow for clarity */
 }
 
+#hero img{
+    border-radius: 50%; 
+    border: 3px solid white; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
+    height: 400px; 
+    width: 400px; 
+    object-fit: cover; /
+}
+
 #Resume:hover{
     background-color: #7231c2;
 }   
@@ -124,8 +133,59 @@
     /* background-color: #4e2285; */
 }
 
-footer {
+/* footer {
     margin-top: 50px;
     padding: 10px;
     font-size: 14px;
+} */
+footer {
+    background-color: #49207c; /* Matches custom navbar color */
+    color: white;
+    padding: 20px 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+footer a {
+    text-decoration: none;
+    color: #f5f5f5;
+}
+
+footer a:hover {
+    color: #7231c2; 
+}
+
+
+
+.jumbotron {
+    border: 1px solid #e3e3e3; /* Subtle border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+.jumbotron h3 {
+    color: #49207c; /* Matches navbar color */
+    font-weight: bold;
+}
+
+.jumbotron p {
+    margin-bottom: 20px;
+}
+
+ul {
+    margin-left: 20px;
+    list-style-type: disc;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.pop-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.pop-hover:hover {
+    transform: scale(10.05); /* Slightly enlarge the element */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Add a shadow for the pop effect */
 }

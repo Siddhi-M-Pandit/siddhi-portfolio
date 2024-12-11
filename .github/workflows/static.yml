@@ -30,11 +30,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4     #action to clone the repository into the runner's working directory so the workflow can access the code.
       - name: Setup Pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v5    #Configures the repository for GitHub Pages by setting up required settings and files.
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v3    #Uploads the entire repository as an artifact to be deployed
         with:
           # Upload entire repository
           path: '.'
