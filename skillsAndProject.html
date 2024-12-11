@@ -3,20 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skills</title>
+    <title>Skills & Projects</title>
     <link rel="stylesheet" href="src/css/style.css">
     <link rel="stylesheet" href="src/css/bootstrap.min.css">
 </head>
+
 <body>
-    <header class="d-flex justify-content-center py-3">
-                    <ul class="nav nav-pills ">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="skillsAndProject.html">Skills & Projects</a></li>
-                        <li class="nav-item"><a class="nav-link" href="educationAndExperience.html">Education & Experience</a></li>
-                        <li class="nav-item"><a class="nav-link" href="about.html">Contact</a></li>
-                    </ul>
+    <!-- Navigation -->
+    <header class="d-flex justify-content-center py-3 custom-navbar">
+         <ul class="nav nav-pills ">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" href="skillsAndProject.html">Skills & Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="educationAndExperience.html">Education & Experience</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">Contact</a></li>
+        </ul>
     </header>
 
+    <!-- Skills Section -->
     <main class="container my-5">
         <h1 class="text-center mb-4">Skills</h1>
         <div class="row g-4">
@@ -49,11 +52,99 @@
                 </div>
             </div>
         </div>
+        <!-- Additional badges -->
+        <div class="container text-center my-5 skillBadges">
+            <h2>Additional Skills</h2>
+            <div class="d-flex justify-content-center flex-wrap gap-3 mt-4">
+                <span class="badge bg-primary">GitHub</span>
+                <span class="badge bg-secondary">Adobe XD</span>
+                <span class="badge bg-success">Adobe Illustrator</span>
+                <span class="badge bg-info">Figma</span>
+            </div>
+        </div>
     </main>
+
+
+    <!-- Projects Section -->
+    <section class="container my-5">
+        <h1 class="text-center mb-4">Projects</h1>
+        <!-- Filter Buttons -->
+        <div class="text-center mb-4 btn-group d-flex justify-content-center" id="filterButton" role="group" aria-label="Project Categories">
+            <button class="btn btn-outline-light filter-btn" data-category="all">All</button>
+            <button class="btn btn-outline-light filter-btn" data-category="web-app">Web Apps</button>
+            <button class="btn btn-outline-light filter-btn" data-category="mobile-app">Mobile Apps</button>
+            <button class="btn btn-outline-light filter-btn" data-category="ai-ml">AI & ML</button>
+            <button class="btn btn-outline-light filter-btn" data-category="data-science">Data Science</button>
+        </div>
+        <!-- Projects Grid -->
+        <div class="row g-4" id="projects-container">
+            <div class="col-md-4 project-card" data-category="web-app">
+                <div class="card text-center bg-light">
+                    <img src="src/images/budget-tracker.jpg" class="card-img-top" alt="Budget Tracker">
+                    <div class="card-body">
+                        <h5 class="card-title">Personal Budget Tracker</h5>
+                        <p class="card-text">A web app to track expenses, visualize spending habits, and set budget goals.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 project-card" data-category="mobile-app">
+                <div class="card text-center bg-light">
+                    <img src="src/images/recipe-sharing.jpg" class="card-img-top" alt="Recipe Sharing Platform">
+                    <div class="card-body text-center bg-light">
+                        <h5 class="card-title">Recipe Sharing Platform</h5>
+                        <p class="card-text">A social platform for sharing and discovering recipes from around the world.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 project-card" data-category="ai-ml">
+                <div class="card text-center bg-light">
+                    <img src="src/images/ai-chatbot.jpg" class="card-img-top" alt="AI Chatbot">
+                    <div class="card-body">
+                        <h5 class="card-title">AI Chatbot for Customer Support</h5>
+                        <p class="card-text">A chatbot using NLP to handle customer FAQs and support requests effectively.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 project-card" data-category="ai-ml">
+                <div class="card text-center bg-light">
+                    <img src="src/images/product-recommendation.jpg" class="card-img-top" alt="Product Recommendation System">
+                    <div class="card-body">
+                        <h5 class="card-title">Product Recommendation System</h5>
+                        <p class="card-text">A recommendation engine for personalized product suggestions in e-commerce.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 project-card" data-category="data-science">
+                <div class="card text-center bg-light">
+                    <img src="src/images/weather-app.jpg" class="card-img-top" alt="Weather Forecast App">
+                    <div class="card-body">
+                        <h5 class="card-title">Weather Forecast Application</h5>
+                        <p class="card-text">A real-time weather app providing forecasts and alerts for any location.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>  
+            <div class="col-md-4 project-card" data-category="web-app">
+                <div class="card text-center bg-light">
+                    <img src="src/images/task-manager.jpg" class="card-img-top" alt="Task Manager">
+                    <div class="card-body">
+                        <h5 class="card-title">Task Manager</h5>
+                        <p class="card-text">A task management tool with calendar integration and progress tracking.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>                           
+        </div>
+    </section>
 
     <footer class="bg-dark text-white text-center py-3">
         <p>&copy; 2024 My Portfolio</p>
     </footer>
     <script src="src/js/bootstrap.bundle.min.js"></script>
+    <script src="src/js/style.js"></script>
 </body>
 </html>
