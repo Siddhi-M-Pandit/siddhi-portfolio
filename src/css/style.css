@@ -62,7 +62,7 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
     height: 400px; 
     width: 400px; 
-    object-fit: cover; /
+    object-fit: cover; 
 }
 
 #Resume:hover{
