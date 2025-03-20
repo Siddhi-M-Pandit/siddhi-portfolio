@@ -71,29 +71,38 @@
 
 
 .badge {
-    font-size: 5rem; 
-    padding: 20px 20px; /* Adjust padding */
-    border-radius: 12px; /* Rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 15px 25px important!;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.2s ease-in-out;
 }
 
-.badge.bg-primary {
-    background-color: #6c63ff; /* Custom color for GitHub */
+.badge:hover {
+    transform: scale(1.1); /* Slight increase on hover */
+}
+
+#ghpa {
+    background-color: #6c63ff; 
     color: white;
 }
 
-.badge.bg-secondary {
-    background-color: #FF61F6; /* Custom color for Adobe XD */
+#fig {
+    background-color: #FF61F6; 
     color: white;
 }
 
-.badge.bg-success {
-    background-color: #28A745; /* Custom color for Adobe Illustrator */
+#dock {
+    background-color: #28A745; 
     color: white;
 }
 
-.badge.bg-info {
-    background-color: #00C4CC; /* Custom color for Figma */
+#axd {
+    background-color: #00C4CC; 
+    color: white;
+}
+
+#aillus {
+    background-color: #bc9e07; 
     color: white;
 }
 
