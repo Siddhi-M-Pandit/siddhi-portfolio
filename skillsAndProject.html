@@ -25,28 +25,28 @@
         <div class="row g-4">
             <!-- Skill 1 -->
             <div class="col-md-6">
-                <div class="jumbotron bg-light p-4 rounded shadow" style="height: 170px; padding: 20px;">
+                <div class="jumbotron bg-light p-4 rounded shadow skills" style="height: 170px; padding: 20px;">
                     <h2>Programming Languages</h2>
                     <p>Python, C++, Java, Dart, HTML, CSS, JavaScript, Solidity</p>
                 </div>
             </div>
             <!-- Skill 2 -->
             <div class="col-md-6">
-                <div class="jumbotron bg-light p-4 rounded shadow" style="height: 170px; padding: 20px;">
+                <div class="jumbotron bg-light p-4 rounded shadow skills" style="height: 170px; padding: 20px;">
                     <h2>Frameworks</h2>
                     <p>Flutter, React, Node.js, Express.js, Bootstrap</p>
                 </div>
             </div>
             <!-- Skill 3 -->
             <div class="col-md-6">
-                <div class="jumbotron bg-light p-4 rounded shadow" style="height: 170px; padding: 20px;">
+                <div class="jumbotron bg-light p-4 rounded shadow skills" style="height: 170px; padding: 20px;">
                     <h2>Data Analysis</h2>
                     <p>Pandas, Numpy, Matplotlib, Seaborn, Plotnine, TensorFlow, Keras, Scikit-learn</p>
                 </div>
             </div>
             <!-- Skill 4 -->
             <div class="col-md-6">
-                <div class="jumbotron bg-light p-4 rounded shadow" style="height: 170px; padding: 20px;">
+                <div class="jumbotron bg-light p-4 rounded shadow skills" style="height: 170px; padding: 20px;">
                     <h2>Database</h2>
                     <p>MongoDB, MySQL, Firestore Database, Firestore Storage</p>
                 </div>
@@ -71,7 +71,7 @@
         <h1 class="text-center mb-4">Projects</h1>
         <!-- Filter Buttons -->
         <div class="text-center mb-4 btn-group d-flex justify-content-center" id="filterButton" role="group" aria-label="Project Categories">
-            <button class="btn btn-outline-light filter-btn" data-category="all">All</button>
+            <button class="btn btn-outline-light filter-btn active" data-category="all">All</button>
             <button class="btn btn-outline-light filter-btn" data-category="web-app">Web Apps</button>
             <button class="btn btn-outline-light filter-btn" data-category="mobile-app">Mobile Apps</button>
             <button class="btn btn-outline-light filter-btn" data-category="ai-ml">AI & ML</button>
@@ -82,66 +82,70 @@
         <div class="row g-4" id="projects-container">
             <div class="col-md-4 project-card" data-category="ai-ml">
                 <div class="card text-center bg-light">
-                    <img src="src/images/budget_tracker.jpg" class="card-img-top" alt="Sentiment Analysis">
+                    <img src="src/images/sentiment.jpg" class="card-img-top" alt="Sentiment Analysis">
                     <div class="card-body">
                         <h5 class="card-title">Sentiment Analysis using ML, DL & LLM</h5>
                         <p class="card-text">A Research Project on Comparative Analysis of ML, DL and LLM models for Sentiment Analysis using Social Media datasets.</p>
-                        <a href="https://github.com/Siddhi-M-Pandit/Sentiment_Analysis_ML_DL_LLM/" class="btn btn-primary" target="_blank">Learn More</a>
+                        <a href="https://github.com/Siddhi-M-Pandit/Sentiment_Analysis_ML_DL_LLM/" class="btn repo-btn btn-outline-secondary" target="_blank">Check out GitHub repo</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 project-card" data-category="web-app">
+                <div class="card text-center bg-light">
+                    <img src="src/images/chessGame1.png" class="card-img-top" alt="Chess Game">
+                    <div class="card-body">
+                        <h5 class="card-title">Chess Game</h5>
+                        <p class="card-text">A web-app for multiplayer chess game using Python, Django, Ajax Polling, WebSockets, Redis, Daphne, Supervisor, SQLite, and Google Cloud Platform. </p>
+                        <a href="https://drive.google.com/drive/folders/17QiWBP4EJEtTqs6wREGEU-jS7UeiB2kv?usp=sharing" class="btn repo-btn btn-outline-secondary" target="_blank">Check out GitHub repo</a>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="col-md-4 project-card" data-category="mobile-app">
+                <div class="card text-center bg-light">
+                    <img src="src/images/ArtspirationLogo.png" class="card-img-top" alt="Artspiration">
+                    <div class="card-body">
+                        <h5 class="card-title">Artspiration</h5>
+                        <p class="card-text">An Flutter-based Android App called as Artspiration, made using Flutter, Dart, Google Firebase for Artists to facilitate E-commerce & Auction. </p>
+                        <a href="https://github.com/Siddhi-M-Pandit/ArtspirationApp/" class="btn repo-btn btn-outline-secondary" target="_blank">Check out GitHub repo</a>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-4 project-card" data-category="mobile-app">
                 <div class="card text-center bg-light">
-                    <img src="src/images/recipe.jpg" class="card-img-top" alt="Chess Timer">
+                    <img src="src/images/chessTimer.jpg" class="card-img-top" alt="Chess Timer">
                     <div class="card-body text-center bg-light">
                         <h5 class="card-title">Chess Timer</h5>
                         <p class="card-text">A Chess Timer App for Android, created using Flutter & Dart.</p>
-                        <a href="https://github.com/Siddhi-M-Pandit/ChessTimerApp/" class="btn btn-primary" target="_blank">Learn More</a>
+                        <a href="https://github.com/Siddhi-M-Pandit/ChessTimerApp/" class="btn repo-btn btn-outline-secondary" target="_blank">Check out GitHub repo</a>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-4 project-card" data-category="mobile-app">
                 <div class="card text-center bg-light">
-                    <img src="src/images/chatbot.jpg" class="card-img-top" alt="Movie Finder">
+                    <img src="src/images/MovieFinder.jpg" class="card-img-top" alt="Movie Finder">
                     <div class="card-body">
                         <h5 class="card-title">Movie Finder</h5>
                         <p class="card-text">A Movie Finder App for Android, using Flutter, Dart and OMDB API.</p>
-                        <a href="https://github.com/Siddhi-M-Pandit/MovieFinderApp/" class="btn btn-primary" target="_blank">Learn More</a>
+                        <a href="https://github.com/Siddhi-M-Pandit/MovieFinderApp/" class="btn repo-btn btn-outline-secondary" target="_blank">Check out GitHub repo</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 project-card" data-category="mobile-app">
-                <div class="card text-center bg-light">
-                    <img src="src/images/product.jpg" class="card-img-top" alt="Artspiration">
-                    <div class="card-body">
-                        <h5 class="card-title">Artspiration</h5>
-                        <p class="card-text">An Android App called as Artspiration, made using Flutter, Dart, Firebase for....</p>
-                        <a href="https://github.com/Siddhi-M-Pandit/ArtspirationApp/" class="btn btn-primary" target="_blank">Learn More</a>
-                    </div>
-                </div>
-            </div>
+            
             <div class="col-md-4 project-card" data-category="mobile-app">   
                 <div class="card text-center bg-light">
-                    <img src="src/images/weather.jpg" class="card-img-top" alt="Gratitude Journal">
+                    <img src="src/images/gratitude.jpg" class="card-img-top" alt="Gratitude Journal">
                     <div class="card-body">
                         <h5 class="card-title">Gratitude Journal</h5>
-                        <p class="card-text">A Gratitude Journal App for Android, using Flutter, Dart and Firebase.</p>
-                        <a href="https://github.com/Siddhi-M-Pandit/GratitudeJournalApp/" class="btn btn-primary" target="_blank">Learn More</a>
+                        <p class="card-text">A Gratitude Journal App for Android, using Flutter, Dart and Google Firebase.</p>
+                        <a href="https://github.com/Siddhi-M-Pandit/GratitudeJournalApp/" class="btn repo-btn btn-outline-secondary" target="_blank">Check out GitHub repo</a>
                     </div>
                 </div>
             </div>  
-            <div class="col-md-4 project-card" data-category="web-app">
-                <div class="card text-center bg-light">
-                    <img src="src/images/tasks.jpg" class="card-img-top" alt="Chess Game">
-                    <div class="card-body">
-                        <h5 class="card-title">Chess Game</h5>
-                        <p class="card-text">A web-app for multiplayer chess game using Python, Django and ....</p>
-                        <a href="" class="btn btn-primary" target="_blank">Learn More</a>
-                    </div>
-                </div>
-            </div>                           
+                                      
         </div>
     </section>
 

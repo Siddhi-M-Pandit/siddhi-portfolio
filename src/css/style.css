@@ -70,6 +70,10 @@
 }   
 
 
+.skills:hover{
+    transform: scale(1.01);
+}
+
 .badge {
     padding: 15px 25px important!;
     border-radius: 20px;
@@ -116,10 +120,12 @@
     align-self: center;
 }
 
-.filter-btn :active{
-    width: 150px;
-    background-color: #4e2285;
-}
+#filterButton .filter-btn:active,
+#filterButton .filter-btn.active {
+    /* width: 150px; */  
+    background-color: #49207c;
+    color: white;
+} 
 
 .card {
     border: none;
@@ -134,13 +140,22 @@
 
 .btn-group .btn {
     margin: 5px;
-    background-color: #7231c2;
+    background-color: #6e30ba;
 }
 
-.btn-group .btn :active {
+.repo-btn {
     margin: 5px;
-    /* background-color: #4e2285; */
+    border-color: #49207c;
 }
+
+.repo-btn:hover{
+    background-color: #a072db !important;
+}
+
+/* .btn-group .btn:hover {
+    border-color: #49207c;
+    border-radius: 1.5px;
+} */
 
 /* footer {
     margin-top: 50px;
