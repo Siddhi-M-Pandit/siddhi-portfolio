@@ -10,55 +10,44 @@
 
 <body>
     <header class="d-flex justify-content-center py-3 custom-navbar">
-        <ul class="nav nav-pills">
+        <ul class="nav nav-pills flex-column flex-md-row align-items-center gap-0">
             <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="skillsAndProject.html">Skills & Projects</a></li>
-             <li class="nav-item"><a class="nav-link" href="educationAndExperience.html">Education & Experience</a></li>
-            <!-- <li class="nav-item"><a class="nav-link" href="about.html">Contact</a></li> -->
+            <li class="nav-item"><a class="nav-link" href="educationAndExperience.html">Education & Experience</a></li>
         </ul>
-          
-        <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="#">My Portfolio</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav"> -->
-                    
-                <!-- </div>
-            </div>
-        </nav> -->
-
     </header>
 
-    <div id="hero">
-        <div class="container col-xxl-8 px-2 py-5">
-            <div class="row flex-lg-row-reverse align-items-center g-4 py-5">
-                <div class="col-10 col-sm-8 col-lg-6">
-                    <img src="src/images/sid.jpg" 
-                    class="d-block mx-lg-auto img-fluid" 
-                    alt="Bootstrap Themes" 
-                    width="700" 
-                    height="500" 
-                    loading="lazy"
-                    data-bs-toggle="popover" 
-                    data-bs-trigger="hover focus" 
-                    data-bs-content="This is me!">
-                </div>
-                <div id="myInfo" class=" col-10 col-sm-8 col-lg-6">
-                    <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Hi! My name is Siddhi Pandit</h1>
-                    <p class="lead"> I'm a passionate software developer and AI / ML enthusiast specializing in building innovative solutions using modern technologies. 
-                        With a strong foundation in programming and a keen eye for design, I love turning ideas into impactful digital experiences.</p>
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                        <a href="src/assets/Siddhi_Resume.pdf" id="Resume" class="btn btn-outline-secondary btn-lg px-4" target="_blank">View Resume</button></a>
+    <main>
+        <section id="hero">
+            <div class="container col-xxl-8 px-2 py-5">
+                <div class="row flex-lg-row-reverse align-items-center justify-content-center g-4 py-5 text-center text-lg-start">
+
+                    <div class="col-12 col-sm-10 col-lg-6 d-flex justify-content-center">
+                        <img src="src/images/sid.jpg" 
+                        class="img-fluid mx-auto mx-lg-0" 
+                        alt="Siddhi Pandit" 
+                        loading="lazy"
+                        data-bs-toggle="popover" 
+                        data-bs-trigger="hover focus" 
+                        data-bs-content="This is me!">
                     </div>
+
+                    <div id="myInfo" class=" col-12 col-sm-10 col-lg-6 mx-auto">
+                        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Hi! My name is Siddhi Pandit</h1>
+                        <p class="lead"> I'm a passionate software developer and AI / ML enthusiast specializing in building innovative solutions using modern technologies. 
+                            With a strong foundation in programming and a keen eye for design, I love turning ideas into impactful digital experiences.</p>
+                        <div class="d-grid gap-2 d-md-flex justify-content-center justify-content-lg-end">
+                            <a href="src/assets/Siddhi_Resume.pdf" id="Resume" class="btn btn-outline-secondary btn-lg px-4" target="_blank">View Resume</a>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
+    </main>
 
 
-    <footer class="bg-dark text-white text-center py-3">
+    <footer class="bg-dark text-white text-center py-3" id="footerId">
         <p>&copy; 2025 My Portfolio</p>
         <p>Email: <a href="mailto:smpandit@csuchico.edu" class="text-white">smpandit@csuchico.edu</a> | 
             LinkedIn: <a href="https://linkedin.com/in/siddhi-m-pandit" target="_blank" class="text-white">linkedin.com/in/siddhi-m-pandit</a> | 
